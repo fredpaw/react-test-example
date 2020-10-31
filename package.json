@@ -41,14 +41,5 @@
     "enzyme-adapter-react-16": "^1.15.5",
     "jest-environment-enzyme": "^7.1.2",
     "jest-enzyme": "^7.1.2"
-  },
-  "jest": {
-    "setupFilesAfterEnv": [
-      "jest-enzyme"
-    ],
-    "testEnvironment": "enzyme",
-    "testEnvironmentOptions": {
-      "enzymeAdapter": "react16"
-    }
   }
 }
