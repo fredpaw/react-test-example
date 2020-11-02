@@ -30,10 +30,17 @@ describe('App Component', () => {
       ]
     }
     wrapper = setup(initialState);
-  })
+  });
 
   it('Should render without errors', () => {
     const component = findByTestAttr(wrapper, 'appComponent');
     expect(component.length).toBe(1);
-  })
+  });
+
+  it('Should update the hideBtn state on class component', () => {
+    const instance = wrapper.instance();
+    instance.updateState();
+    const newState = instance.state.hideBtn;
+    expect(newState).toBe(true);
+  });
 })
